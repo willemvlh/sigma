@@ -1,50 +1,56 @@
 <html>
-<head>
-<title>___</title>
-<style>
-@import url('https://rsms.me/inter/inter.css');
-html { font-family: 'Inter', sans-serif; }
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>___</title>
+    <style>
+      @import url("https://rsms.me/inter/inter.css");
+      html {
+        font-family: "Inter", sans-serif;
+        background: linear-gradient(white 0%, #ffe2e2 60%, #cddcff 100%);
+      }
 
-body{
-  background-color: #ffffff;
-}
+      body {
+        margin: 0;
+      }
 
-span#symbol{
-  font-size: 4em;
-}
+      span#symbol {
+        font-size: 14em;
+        color: white;
+        text-shadow: #301d1d 1px 1px 6px;
+      }
 
-span#loading{
-  text-transform: uppercase;
-  font-weight: bold;
-}
+      span#loading {
+        text-transform: uppercase;
+        font-weight: bold;
+        animation-name: anim;
+        animation-duration: 2.4s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+        animation-delay: 0.3s;
+      }
 
-div{
-  text-align: center;
-  color: white;
-  transform: 1s;
-  animation-name: anim;
-  animation-duration: 2.4s;
-  animation-timing-function: linear;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-  animation-delay: 1s;
-}
+      div {
+        height: 100%;
+        text-align: center;
+        transform: 1s;
+      }
 
-@keyframes anim{
-  from{
-    color: #111;
-  }
-  to{
-    color: #ddd;
-  }
-}
-</style>
-</head>
-<body>
-<div id="sigma">
-<span id="symbol">Σ</span>
-<br/>
-<span id="loading">loading...</span>
-</div>
-</body>
+      @keyframes anim {
+        from {
+          opacity: 70%;
+        }
+        to {
+          opacity: 0%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="sigma">
+      <span id="symbol">Σ</span>
+      <br />
+      <span id="loading">loading...</span>
+    </div>
+  </body>
 </html>
