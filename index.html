@@ -1,0 +1,50 @@
+<html>
+<head>
+<title>___</title>
+<style>
+@import url('https://rsms.me/inter/inter.css');
+html { font-family: 'Inter', sans-serif; }
+
+body{
+  background-color: #ffffff;
+}
+
+span#symbol{
+  font-size: 4em;
+}
+
+span#loading{
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+div{
+  text-align: center;
+  color: white;
+  transform: 1s;
+  animation-name: anim;
+  animation-duration: 2.4s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-delay: 1s;
+}
+
+@keyframes anim{
+  from{
+    color: #111;
+  }
+  to{
+    color: #ddd;
+  }
+}
+</style>
+</head>
+<body>
+<div id="sigma">
+<span id="symbol">Σ</span>
+<br/>
+<span id="loading">loading...</span>
+</div>
+</body>
+</html>
