@@ -4,7 +4,7 @@
     <title>___</title>
     <style>
       html {
-        font-family: "Inter", sans-serif;
+        font-family: sans-serif;
         background: linear-gradient(white 0%, #ffe2e2 60%, #cddcff 100%);
       }
 
@@ -13,6 +13,7 @@
       }
 
       span#symbol {
+        opacity: 0;
         font-size: 14em;
         color: white;
         text-shadow: #301d1d 1px 1px 6px;
@@ -21,7 +22,7 @@
         animation-timing-function: linear;
         animation-iteration-count: infinite;
         animation-direction: alternate;
-        animation-delay: 0.8s;
+        animation-delay: 5s;
       }
 
       div {
@@ -31,10 +32,10 @@
 
       @keyframes anim {
         from {
-          opacity: 100%;
+          opacity: 0%;
         }
         to {
-          opacity: 70%;
+          opacity: 100%;
         }
       }
     </style>
