@@ -13,21 +13,21 @@
       }
 
       span#symbol {
-        opacity: 0;
+        opacity: 1;
         font-size: 14em;
         color: white;
         text-shadow: #301d1d 1px 1px 6px;
         animation-name: anim;
-        animation-duration: 3s;
-        animation-timing-function: linear;
-        animation-iteration-count: infinite;
-        animation-direction: alternate;
-        animation-delay: 5s;
+        animation-duration: 5s;
+        animation-timing-function: cubic-bezier(0.6, 0.04, 0.98, 0.335);
+        animation-iteration-count: 1;
+        animation-direction: normal;
+        animation-delay: 0s;
       }
 
       div {
         height: 100%;
-        text-align: center;
+        text-align: right;
       }
 
       @keyframes anim {
@@ -42,7 +42,9 @@
   </head>
   <body>
     <div id="sigma">
-      <span id="symbol">Σ</span>
+      <span id="symbol">
+        <img src="./iago.png" />
+      </span>
     </div>
   </body>
 </html>
